@@ -161,8 +161,6 @@ if __name__ == "__main__":
 
 
     
-    scripts_dir=os.path.join(os.path.dirname(__file__), 'bad_usb_scripts')
-    scriptname = 'buttons+keyboardsim'
-    module = importlib.import_module(f'modes.bad_usb.bad_usb_scripts.{scriptname}')
+    import Functions.buttonsnkeyboardsim as module
     
     module.run()
