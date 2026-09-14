@@ -1,9 +1,11 @@
 #bad_usb.py
-import config
+
 import os
 import subprocess
 import time
 import sys
+
+used_layout = 'us'
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.."))
 sys.path.insert(0, ROOT)
@@ -114,10 +116,11 @@ shift_codes_cz = {
     '(':'ú','/':')','"':'ů','!':'§',
 }
 
-if config.used_layout == 'us':
+
+if used_layout == 'us':
     keycodes = keycodes_us
     shift_codes = shift_codes_us
-elif config.used_layout == 'cz':
+elif used_layout == 'cz':
     keycodes = keycodes_cz
     shift_codes = shift_codes_cz
 
