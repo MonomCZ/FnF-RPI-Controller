@@ -6,12 +6,14 @@ def run():
         if button.button1():
             press_key(0x08, 0x15) #testing
             #press_key(0x00,0x04) #a
+            break
         if button.button2():
             press_key(0x16) #s
         if button.button4():
             press_key(0x00,0x0e) #k
         if button.button5():
             press_key(0x00,0x0f) #l
+        
 
 
 
