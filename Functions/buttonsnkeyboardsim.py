@@ -1,4 +1,4 @@
-import Functions.buttons as button
+import Functions.gpio_buttons as button
 from Functions.keyboard_simulation import type_string, press_key, setup_gadget
 
 def run():
