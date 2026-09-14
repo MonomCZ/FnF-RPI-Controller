@@ -158,6 +158,8 @@ if __name__ == "__main__":
     setup_gadget()
     #scripts
     import importlib
+    setup_gadget()
+    
     
     scripts_dir=os.path.join(os.path.dirname(__file__), 'bad_usb_scripts')
     scriptname = 'buttons+keyboardsim'
