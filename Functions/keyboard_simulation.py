@@ -149,7 +149,7 @@ def type_string(text,delay=0.05, device='/dev/hidg0'):
 def press_key(modifier, keycode, device='/dev/hidg0'):
     with open(device, 'wb') as hid:
         hid.write(bytes([modifier, 0, keycode, 0, 0, 0, 0, 0]))
-        hid.flush()
+        #hid.flush()
         #time.sleep(0.05)
         hid.write(bytes([0, 0, 0, 0, 0, 0, 0, 0]))
         #hid.flush()
