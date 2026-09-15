@@ -151,8 +151,8 @@ def press_key(modifier, keycode, device='/dev/hidg0'):
         hid.write(bytes([modifier, 0, keycode, 0, 0, 0, 0, 0]))
         hid.flush()
         #time.sleep(0.05)
-        #hid.write(bytes([0, 0, 0, 0, 0, 0, 0, 0]))
-        #hid.flush()
+        hid.write(bytes([0, 0, 0, 0, 0, 0, 0, 0]))
+        hid.flush()
 
 if __name__ == "__main__":
     setup_gadget()
